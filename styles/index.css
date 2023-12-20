@@ -3,6 +3,7 @@
 :root {
     --yellow: #c6ab22;
     --white: rgba(255, 255, 255, 0.685);
+    --border-line: rgba(255, 255, 255, 0.233);
 }
 
 * {
@@ -10,6 +11,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    user-select: none;
 }
 
 button {
@@ -24,7 +26,6 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
-    user-select: none;
 }
 
 section h2 {
@@ -136,3 +137,60 @@ section {
 }
 
 /* SECTION SERVICES */
+#services .services-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+#services .services-list {
+    /* border: 1px solid red; */
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(350px, 450px));
+    /* grid-gap: 30px; */
+}
+
+#services .services-list .services-item {
+    padding: 30px;
+}
+
+#services .services-list .services-item-name {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#services .services-list .services-item-name a {
+    color: var(--yellow);
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+#services .services-list .services-item .service-description {
+    color: var(--white);
+    letter-spacing: 2px;
+    margin-left: 80px;
+    line-height: 1.8;
+}
+
+#services .services-list .services-item {
+    border-top: 1px solid var(--border-line);
+    border-left: 1px solid var(--border-line);
+    &:nth-child(1),
+    &:nth-child(2) {
+        border-top: none;
+    };
+    &:nth-child(1),
+    &:nth-child(3) {
+        border-left: none;
+    };
+}
+
+#services .services-content .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
