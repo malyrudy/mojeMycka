@@ -440,26 +440,6 @@ footer .copyright-notice {
         font-size: .8rem;
     }
 
-    #services .services-list .services-item {
-        border-top: 1px solid var(--border-line);
-        border-left: 1px solid var(--border-line);
-        &:nth-child(1),
-        &:nth-child(2) {
-            border-top: none;
-        };
-        &:nth-child(1),
-        &:nth-child(3) {
-            border-left: none;
-        };
-    }
-
-    #services .services-content .btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 5px;
-    }
-
     /* SECTION REVIEWS */
     #reviews .reviews-list {
         gap: 1.5rem;
@@ -474,10 +454,6 @@ footer .copyright-notice {
     }
 
     /* SECTION ABOUT-US */
-    #about-us .about-us-content img {
-        padding-right: 50px;
-    }
-
     #about-us .about-us-content p {
         border-left: 1px solid var(--border-line);
         padding: 30px 80px 30px 60px;
@@ -523,6 +499,99 @@ footer .copyright-notice {
 
     .footer-nav ul {
         font-size: 1rem;
+    }
+
+    footer .copyright-notice,
+    footer .copyright-notice a {
+        font-size: .8rem;
+    }
+
+}
+
+@media screen and (max-width: 860px) {
+    /* SECTION HOME */
+    #home .text-content h1,
+    #home .text-content h1 span {
+        font-size: 2.7rem;
+    }
+    
+    #home .text-content h3 {
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        font-size: .6rem;
+        padding: .7rem 1.1rem;
+    }
+
+    /* SECTION SERVICES */
+    #services .services-list {
+        grid-template-columns: repeat(2, minmax(250px, 350px));
+    }
+
+    #services .services-list .services-item-name a {
+        font-size: 1.1rem;
+    }
+
+    #services .services-list .services-item .service-description {
+        font-size: .7rem;
+    }
+
+    #services .services-content .btn {
+        padding: .8rem 2rem;
+    }
+
+    /* SECTION REVIEWS */
+    #reviews .reviews-list {
+        gap: 1.2rem;
+    }
+
+    #reviews .review-item .review-nameIcon h4 {
+        font-size: 1rem;
+    }
+
+    #reviews .review-item .review-description p {
+        font-size: .8rem;
+    }
+
+    /* SECTION ABOUT-US */
+    #about-us .about-us-content p {
+        padding: 2rem;
+        font-size: .9rem;
+    }
+
+    /* SECTION CONTACT */
+    #contact .contact-content {
+        gap: 1.5rem;
+    }
+
+    #contact .contact-content form {
+        gap: 1.5rem;
+    }
+
+    #contact .contact-content form input {
+        font-size: .8rem;
+        width: 20rem;
+    }
+
+    #contact .contact-content form button {
+        font-size: .8rem;
+        padding: 1rem 2rem;
+    }
+
+    #contact .contact-content .my-contact-info p {
+        gap: 15px;
+        font-size: .8rem;
+    }
+
+    /* SECTION FOOTER  */
+    footer .footer-content .my-logo,
+    footer .footer-content h5 {
+        font-size: .9rem;
+    }
+
+    .footer-nav ul {
+        font-size: .8rem;
     }
 
     footer .copyright-notice,
