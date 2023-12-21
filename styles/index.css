@@ -8,13 +8,17 @@
     --contact-form-color: #4E4141;
 }
 
+html, body {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     user-select: none;
-    scroll-behavior: smooth;
+    font-size: 16px;
 }
 
 button {
@@ -34,8 +38,9 @@ a {
 section h2 {
     color: var(--yellow);
     font-weight: 400;
-    font-size: 40px;
+    font-size: 2.8rem;
     margin-bottom: 50px;
+    padding-top: 20px;
 }
 
 body {
@@ -48,7 +53,8 @@ body {
 }
 
 .btn {
-    padding: 20px 30px;
+    /* padding: 20px 30px; */
+    padding: 1rem 2.5rem;
     border-radius: 50px;
     background: linear-gradient(#FFD613, #8E780D);
     color: black;
@@ -56,21 +62,30 @@ body {
 }
 
 /* Header */
+header {
+    width: 100%;
+}
+
 nav {
     color: var(--white);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 20px;
+    width: 100%;
+}
+
+nav ul li a {
+    font-size: 1.2rem;
 }
 
 .logo-item {
     display: flex;
     align-items: center;
     gap: 10px;
+    font-size: 1.2rem;
 }
 
-.hide {
+.hamburger-menu-icon {
     display: none;
 }
 
@@ -98,7 +113,7 @@ section {
 #home {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 1rem;
 }
 
 #home .text-content {
@@ -110,19 +125,22 @@ section {
 #home .text-content h1 {
     color: var(--yellow);
     font-weight: 400;
-    font-size: 75px;
+    /* font-size: 75px; */
+    font-size: 4.2rem;
     line-height: .95;
     margin-bottom: 25px;
 }
 
 #home .text-content h1 span {
     color: var(--white);
+    font-size: 4.2rem;
 }
 
 #home .text-content h3 {
     color: var(--white);
     font-weight: 300;
-    font-size: 30px;
+    /* font-size: 30px; */
+    font-size: 1.8rem;
     margin-bottom: 40px;
 }
 
@@ -210,29 +228,28 @@ section {
     display: grid;
     grid-template-columns: repeat(3, minmax(200px, 330px));
     justify-content: center;
-    gap: 100px;
+    gap: 5rem;
 }
 
 #reviews .review-item .review-nameIcon {
     display: flex;
     align-items: center;
     gap: 15px;
-    margin-left: 35px;
 }
 
 #reviews .review-item .review-nameIcon h4 {
     color: var(--white);
-    font-size: 28px;
+    font-size: 1.8rem;
     font-weight: 300;
 }
 
 #reviews .review-item .review-description {
     color: var(--white);
-    font-size: 18px;
-    padding: 30px 20px;
+    font-size: 1rem;
+    padding: 2rem 1.5rem;
     background: var(--review-bg);
     border-radius: 50px;
-    height: 200px;
+    height: 14rem;
     margin-top: 30px;
 }
 
@@ -296,6 +313,7 @@ section {
     font-size: 18px;
     gap: 10px;
     cursor: pointer;
+    margin-bottom: 30px;
 }
 
 #contact .contact-content .my-contact-info {
@@ -359,4 +377,157 @@ footer .copyright-notice {
     text-align: right;
     padding-right: 30px;
     padding-bottom: 30px;
+}
+
+@media screen and (max-width: 1450px) {
+    .container {
+        margin: 30px 5%;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .container {
+        margin: 30px 5%;
+    }
+
+    section h2 {
+        font-size: 2.2rem;
+    }
+
+    /* Navbar */
+
+    .hamburger-menu-icon {
+        display: flex;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    /* SECTION HOME */
+    #home .text-content h1,
+    #home .text-content h1 span {
+        font-size: 3rem;
+    }
+    
+    #home .text-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .btn {
+        font-size: .8rem;
+        padding: 1rem 1.5rem;
+    }
+
+    /* SECTION SERVICES */
+    #services .services-list {
+        grid-template-columns: repeat(2, minmax(350px, 400px));
+    }
+
+    #services .services-list .services-item {
+        padding: 1.5rem;
+    }
+
+    #services .services-list .services-item-name a {
+        font-size: 1.3rem;
+    }
+
+    #services .services-list .services-item .service-description {
+        color: var(--white);
+        letter-spacing: 2px;
+        margin-left: 80px;
+        line-height: 1.8;
+        font-size: .8rem;
+    }
+
+    #services .services-list .services-item {
+        border-top: 1px solid var(--border-line);
+        border-left: 1px solid var(--border-line);
+        &:nth-child(1),
+        &:nth-child(2) {
+            border-top: none;
+        };
+        &:nth-child(1),
+        &:nth-child(3) {
+            border-left: none;
+        };
+    }
+
+    #services .services-content .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    /* SECTION REVIEWS */
+    #reviews .reviews-list {
+        gap: 1.5rem;
+    }
+
+    #reviews .review-item .review-nameIcon h4 {
+        font-size: 1.3rem;
+    }
+
+    #reviews .review-item .review-description p {
+        font-size: .9rem;
+    }
+
+    /* SECTION ABOUT-US */
+    #about-us .about-us-content img {
+        padding-right: 50px;
+    }
+
+    #about-us .about-us-content p {
+        border-left: 1px solid var(--border-line);
+        padding: 30px 80px 30px 60px;
+        color: var(--white);
+        font-size: 1rem;
+    }
+
+    /* SECTION CONTACT */
+    #contact .contact-content {
+        gap: 3rem;
+    }
+
+    #contact .contact-content form {
+        gap: 1.5rem;
+    }
+
+    #contact .contact-content form input {
+        padding: 1.2rem 1.5rem;
+        font-size: 1rem;
+        width: 25rem;
+    }
+
+    #contact .contact-content form button {
+        font-size: .9rem;
+    }
+
+    #contact .contact-content .my-contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #contact .contact-content .my-contact-info p {
+        gap: 15px;
+        font-size: 1rem;
+    }
+
+    /* SECTION FOOTER  */
+    footer .footer-content .my-logo,
+    footer .footer-content h5 {
+        font-size: 1.1rem;
+    }
+
+    .footer-nav ul {
+        font-size: 1rem;
+    }
+
+    footer .copyright-notice,
+    footer .copyright-notice a {
+        font-size: .8rem;
+    }
+
 }
