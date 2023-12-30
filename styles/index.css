@@ -10,6 +10,7 @@
 
 html, body {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 * {
@@ -386,7 +387,7 @@ footer .copyright-notice {
 
 @media screen and (max-width: 1250px) {
     .container {
-        margin: 30px 5%;
+        margin: 30px 3%;
     }
 
     section h2 {
@@ -398,12 +399,27 @@ footer .copyright-notice {
         flex-direction: column;
         align-items: space-between;
         gap: 2.5rem;
-        /* background-color: red; */
         width: 100%;
     } 
     .navbar ul {
         display: none;
-        height: 100vh;
+        /* visibility: hidden; */
+        padding-bottom: 2rem;
+        height: fit-content;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        background-color: #131212;
+        z-index: 999;
+        border-bottom: 1px solid var(--yellow);
+        transition: all 0.2s ease-in-out;
+    }
+
+    .navbar ul.active {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+        /* visibility: visible; */
     }
 
     nav button {
@@ -424,8 +440,6 @@ footer .copyright-notice {
     }
 
     .navbar ul li {
-        margin-left: 2rem;
-        margin-top: .5rem;
         font-size: 2rem;
     }
 
