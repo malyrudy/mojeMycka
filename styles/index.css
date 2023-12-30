@@ -394,12 +394,28 @@ footer .copyright-notice {
         font-size: 2.2rem;
     }
 
+    /* Původní styl pro čáry */
+    .line1, .line2 {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    /* Změněný styl pro první čáru (po kliknutí) */
+    .line1.active {
+        transform: translateY(20px) rotate(-45deg);
+    }
+
+    /* Změněný styl pro druhou čáru (po kliknutí) */
+    .line2.active {
+        transform: translateY(-15px) translateX(12px) rotate(45deg) scale(1.5);
+    }
+
     /* Navbar */
     nav {
         flex-direction: column;
         align-items: space-between;
         gap: 2.5rem;
         width: 100%;
+        overflow: visible;
     } 
     .navbar ul {
         display: none;
@@ -428,6 +444,13 @@ footer .copyright-notice {
 
     .hamburger-menu-icon {
         display: flex;
+        height: 20px;
+        width: 40px;
+    }
+
+    .hamburger-menu-icon svg {
+        width: 100%;
+        height: 100%;
     }
 
     .navbar {
