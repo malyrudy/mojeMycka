@@ -53,7 +53,6 @@ body {
 }
 
 .btn {
-    /* padding: 20px 30px; */
     padding: 1rem 2.5rem;
     border-radius: 50px;
     background: linear-gradient(#FFD613, #8E780D);
@@ -69,9 +68,17 @@ header {
 nav {
     color: var(--white);
     display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-header {
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
 }
 
 nav ul li a {
@@ -125,7 +132,6 @@ section {
 #home .text-content h1 {
     color: var(--yellow);
     font-weight: 400;
-    /* font-size: 75px; */
     font-size: 4.2rem;
     line-height: .95;
     margin-bottom: 25px;
@@ -139,7 +145,6 @@ section {
 #home .text-content h3 {
     color: var(--white);
     font-weight: 300;
-    /* font-size: 30px; */
     font-size: 1.8rem;
     margin-bottom: 40px;
 }
@@ -389,13 +394,43 @@ footer .copyright-notice {
     }
 
     /* Navbar */
+    nav {
+        flex-direction: column;
+        align-items: space-between;
+        gap: 2.5rem;
+        /* background-color: red; */
+        width: 100%;
+    } 
+    .navbar ul {
+        display: none;
+        height: 100vh;
+    }
+
+    nav button {
+        cursor: pointer;
+    }
 
     .hamburger-menu-icon {
         display: flex;
     }
 
     .navbar {
-        display: none;
+        display: flex;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .navbar ul li {
+        margin-left: 2rem;
+        margin-top: .5rem;
+        font-size: 2rem;
+    }
+
+    .nav-header {
+        width: 100%;
     }
 
     /* SECTION HOME */
