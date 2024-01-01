@@ -28,7 +28,7 @@ ScrollReveal({
     delay: 200
 });
 
-ScrollReveal().reveal('.review-item', { origin: "top" });
+ScrollReveal().reveal('.reviews-list', { origin: "top" });
 ScrollReveal().reveal('.about-us-content', { origin: "bottom" });
 ScrollReveal().reveal('#home .text-content, .my-contact-info', { origin: "left" });
 ScrollReveal().reveal('.image-content, .services-item, form', { origin: "right" });
