@@ -30,5 +30,5 @@ ScrollReveal({
 
 ScrollReveal().reveal('.review-item', { origin: "top" });
 ScrollReveal().reveal('.about-us-content', { origin: "bottom" });
-ScrollReveal().reveal('#home .text-content, .contact-content', { origin: "left" });
-ScrollReveal().reveal('.image-content, .services-item', { origin: "right" });
+ScrollReveal().reveal('#home .text-content, .my-contact-info', { origin: "left" });
+ScrollReveal().reveal('.image-content, .services-item, form', { origin: "right" });
