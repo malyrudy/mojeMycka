@@ -19,3 +19,16 @@ navbarMenuItems.forEach(item => {
         document.querySelector('.line2').classList.toggle('active');
     })
 });
+
+// Scroll reveal
+ScrollReveal({ 
+    // reset: true,
+    distance: "80px",
+    duration: 2000,
+    delay: 200
+});
+
+ScrollReveal().reveal('.review-item', { origin: "top" });
+ScrollReveal().reveal('.about-us-content', { origin: "bottom" });
+ScrollReveal().reveal('#home .text-content, .contact-content', { origin: "left" });
+ScrollReveal().reveal('.image-content, .services-item', { origin: "right" });
