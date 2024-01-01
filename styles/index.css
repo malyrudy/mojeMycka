@@ -206,6 +206,9 @@ section {
     color: var(--yellow);
     font-size: 25px;
     letter-spacing: 2px;
+}
+
+#services .services-list .services-item-name a:hover {
     animation: floatText 1.5s ease-in-out infinite;
 }
 
