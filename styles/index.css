@@ -190,10 +190,23 @@ section {
     gap: 15px;
 }
 
+@keyframes floatText {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-.1rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 #services .services-list .services-item-name a {
     color: var(--yellow);
     font-size: 25px;
     letter-spacing: 2px;
+    animation: floatText 1.5s ease-in-out infinite;
 }
 
 #services .services-list .services-item .service-description {
