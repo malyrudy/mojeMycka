@@ -63,7 +63,8 @@ body {
 
 /* Header */
 header {
-    width: 100%;
+    max-width: 1400px;
+    margin: 30px auto;
 }
 
 nav {
@@ -399,9 +400,17 @@ footer .copyright-notice {
     .container {
         margin: 30px 5%;
     }
+
+    header {
+        margin: 30px 2%;
+    }
 }
 
 @media screen and (max-width: 1250px) {
+    header {
+        margin: 30px 2%;
+    }
+
     .container {
         margin: 30px 3%;
     }
@@ -429,12 +438,13 @@ footer .copyright-notice {
     nav {
         flex-direction: column;
         align-items: space-between;
-        gap: 2.5rem;
+        gap: .5rem;
         width: 100%;
         overflow: visible;
     } 
     .navbar ul {
         display: none;
+        gap: 0;
         /* visibility: hidden; */
         padding-bottom: 2rem;
         height: fit-content;
@@ -475,7 +485,7 @@ footer .copyright-notice {
 
     .navbar ul {
         flex-direction: column;
-        margin-top: 2rem;
+        margin-top: .5rem;
     }
 
     .navbar ul li {
