@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje myčka - Dárkový poukaz</title>
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-header">
+                <a class="logo-item" href="./index.html">
+                    <svg width="32" height="31" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="13.5" cy="13.5" r="13.5" fill="#FFD613"/>
+                        <circle cx="18.5" cy="17.5" r="13.5" fill="#BB9E16"/>
+                    </svg>
+                    Moje Myčka
+                </a>
+                <button class="hamburger-menu-icon">
+                    <svg width="37" height="13" viewBox="0 0 37 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line class="line1" x1="5.92517" y1="0.5" x2="36.0748" y2="0.5" stroke="#FFD613" stroke-width="1"/>
+                        <line class="line2"  y1="12" x2="30.1496" y2="12" stroke="#FFD613" stroke-width="1"/>
+                    </svg> 
+                </button>
+            </div>
+            <div class="navbar">
+                <ul class="navbar-ul">
+                    <li><a href="./index.html#home">domů.</a></li>
+                    <li><a href="./index.html#services">služby/ceník.</a></li>
+                    <li><a href="./index.html#reviews">recenze.</a></li>
+                    <li><a href="./index.html#about-us">o nás.</a></li>
+                    <li><a href="./galerie.html">galerie.</a></li>
+                    <li><a href="#">dárkový poukaz.</a></li>
+                    <li><a href="./index.html#contact" class="btn">kontakt.</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main>
+            <section id="darkovy_poukaz">
+                <h2>dárkový poukaz</h2>
+                <p class="information">
+                    Chcete obdarovat své blízké? Dárek k Vánocům, k narozeninám nebo jakýkoli jiný důvod potěšení člena rodiny, kamaráda nebo známého... <br><br>
+                    Darujte nevšední dárek v podobě kompletní péče o čtyřkolého miláčka. Vámi obdarovaný dostane nejen radost, ale i čisté auto :) <br><br>
+                    Dárkové poukazy jsou buď na daný program nebo na Vámi zvolenou cenu.
+                </p>
+                <div class="darkovy-poukaz-content">
+                    <div class="darkovy-poukaz-download-sekce" id="download-container">
+                        <div class="darkovy-poukaz-item">
+                            <h3>dárkový poukaz 1</h3>
+                            <img src="./images/dárkový_poukaz1.jpg" alt="dárkový poukaz">
+                            <button class="btn"  onclick="createAndAppendDownloadLink('./images/dárkový_poukaz1.jpg', 'dárkový_poukaz1.jpg')">stáhnout poukaz</button>
+                        </div>
+                        <div class="darkovy-poukaz-item">
+                            <h3>dárkový poukaz 2</h3>
+                            <img src="./images/dárkový_poukaz2.jpg" alt="dárkový poukaz">
+                            <button class="btn">stáhnout poukaz</button>
+                        </div>
+                        <div class="darkovy-poukaz-item">
+                            <h3>dárkový poukaz 3</h3>
+                            <img src="./images/dárkový_poukaz3.jpg" alt="dárkový poukaz">
+                            <button class="btn">stáhnout poukaz</button>
+                        </div>
+                        <div class="darkovy-poukaz-item">
+                            <h3>dárkový poukaz 4</h3>
+                            <img src="./images/dárkový_poukaz4.jpg" alt="dárkový poukaz">
+                            <button class="btn">stáhnout poukaz</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <!-- Scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>
+</html>
