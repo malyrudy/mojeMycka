@@ -989,9 +989,4 @@ footer .copyright-notice {
     }
 }
 
-@media screen and (max-width: 550px ) {
-    .darkovy-poukaz-item img {
-        width: 103%;
-    }
-}
 
