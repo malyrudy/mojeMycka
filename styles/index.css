@@ -11,6 +11,8 @@
 html, body {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 * {
@@ -398,6 +400,7 @@ footer .copyright-notice {
 
 @media screen and (max-width: 1450px) {
     .container {
+        width: 90%;
         margin: 30px 5%;
     }
 
@@ -413,7 +416,7 @@ footer .copyright-notice {
     }
 
     .container {
-        margin: 30px 3%;
+        margin: 30px auto;
     }
 
     section h2 {
@@ -482,6 +485,7 @@ footer .copyright-notice {
 
     .navbar {
         display: flex;
+        flex-direction: column;
     }
 
     .navbar ul {
@@ -988,4 +992,3 @@ footer .copyright-notice {
         width: 100%;
     }
 }
-
