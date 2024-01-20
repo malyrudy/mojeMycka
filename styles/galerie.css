@@ -6,6 +6,10 @@
     --contact-form-color: #4E4141;
 }
 
+.gallery-description-header{
+    margin-top: 3rem;
+}
+
 .gallery-description {
     display: flex;
     flex-direction: column;
