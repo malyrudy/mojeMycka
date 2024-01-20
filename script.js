@@ -33,6 +33,11 @@ ScrollReveal().reveal('.about-us-content', { origin: "bottom" });
 ScrollReveal().reveal('#home .text-content, .my-contact-info', { origin: "left" });
 ScrollReveal().reveal('.image-content, .services-item, form', { origin: "right" });
 
+// Galerie Scroll reveal 
+ScrollReveal().reveal('.gallery-description-header', { origin: "top" });
+ScrollReveal().reveal('.done-services', { origin: "left" });
+ScrollReveal().reveal('.carousel', { origin: "bottom" });
+
 // Stažení dárkového poukazu 
 var imagePaths = ['./images/dárkový_poukaz1.jpg', './images/dárkový_poukaz2.jpg', './images/dárkový_poukaz3.jpg', './images/dárkový_poukaz4.jpg'];
 
@@ -51,5 +56,3 @@ function downloadImage(imagePath, downloadFileName) {
     // Odstranění odkazu z dokumentu
     document.body.removeChild(link);
 }
-
-// Galerie

@@ -1,102 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moje myčka</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="./styles/galerie.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="nav-header">
-                <a class="logo-item" href="./index.html">
-                    <svg width="32" height="31" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="13.5" cy="13.5" r="13.5" fill="#FFD613"/>
-                        <circle cx="18.5" cy="17.5" r="13.5" fill="#BB9E16"/>
-                    </svg>
-                    Moje Myčka
-                </a>
-                <button class="hamburger-menu-icon">
-                    <svg width="37" height="13" viewBox="0 0 37 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line class="line1" x1="5.92517" y1="0.5" x2="36.0748" y2="0.5" stroke="#FFD613" stroke-width="1"/>
-                        <line class="line2"  y1="12" x2="30.1496" y2="12" stroke="#FFD613" stroke-width="1"/>
-                    </svg> 
-                </button>
-            </div>
-            <div class="navbar">
-                <ul class="navbar-ul">
-                    <li><a href="./index.html#home">domů.</a></li>
-                    <li><a href="./index.html#services">služby/ceník.</a></li>
-                    <li><a href="./index.html#reviews">recenze.</a></li>
-                    <li><a href="./index.html#about-us">o nás.</a></li>
-                    <li><a href="./galerie.html">galerie.</a></li>
-                    <li><a href="./darkovy_poukaz.html">dárkový poukaz.</a></li>
-                    <li><a href="./index.html#contact" class="btn">kontakt.</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <div class="container">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Moje myčka</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <link rel="stylesheet" href="./styles/index.css">
+      <link rel="stylesheet" href="./styles/galerie.css">
+  </head>
+  <body>
+      <header>
+          <nav>
+              <div class="nav-header">
+                  <a class="logo-item" href="./index.html">
+                      <svg width="32" height="31" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="13.5" cy="13.5" r="13.5" fill="#FFD613"/>
+                          <circle cx="18.5" cy="17.5" r="13.5" fill="#BB9E16"/>
+                      </svg>
+                      Moje Myčka
+                  </a>
+                  <button class="hamburger-menu-icon">
+                      <svg width="37" height="13" viewBox="0 0 37 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <line class="line1" x1="5.92517" y1="0.5" x2="36.0748" y2="0.5" stroke="#FFD613" stroke-width="1"/>
+                          <line class="line2"  y1="12" x2="30.1496" y2="12" stroke="#FFD613" stroke-width="1"/>
+                      </svg> 
+                  </button>
+              </div>
+              <div class="navbar">
+                  <ul class="navbar-ul">
+                      <li><a href="./index.html#home">domů.</a></li>
+                      <li><a href="./index.html#services">služby/ceník.</a></li>
+                      <li><a href="./index.html#reviews">recenze.</a></li>
+                      <li><a href="./index.html#about-us">o nás.</a></li>
+                      <li><a href="./galerie.html">galerie.</a></li>
+                      <li><a href="./darkovy_poukaz.html">dárkový poukaz.</a></li>
+                      <li><a href="./index.html#contact" class="btn">kontakt.</a></li>
+                  </ul>
+              </div>
+          </nav>
+      </header>
+      <div class="container">
         <main>
-            <section id="gallery">
-                <h2>galerie - malá ukázka mých prací</h2>
-                <div id="carouselExampleIndicators" class="carousel slide">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+              <section id="gallery">
+                  <h2>galerie - malá ukázka mých prací</h2>
+                  <div class="gallery-item">
+                    <div class="gallery-description">
+                      <h5 class="gallery-description-header">Ferrari Portofino</h5>
+                      <ul class="done-services">
+                        <li>korekce (leštění) laku</li>
+                        <li>keramická ochrana laku, skel</li>
+                        <li>kol, brzdových třmenů</li>
+                        <li>venkovnívh plastů</li>
+                        <li>čištění interiéru</li>
+                      </ul>
                     </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="./images/ferrari1.jpg" class="d-block w-100" alt="Ferrari Portofino">
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
                       </div>
-                      <div class="carousel-item">
-                        <img src="./images/ferrari2.jpg" class="d-block w-100" alt="Ferrari Portofino">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="./images/ferrari1.jpg" class="d-block w-100" alt="Ferrari Portofino">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./images/ferrari2.jpg" class="d-block w-100" alt="Ferrari Portofino">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./images/ferrari3.jpg" class="d-block w-100" alt="Ferrari Portofino">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./images/ferrari4.jpg" class="d-block w-100" alt="Ferrari Portofino">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./images/ferrari5.jpg" class="d-block w-100" alt="Ferrari Portofino">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./images/ferrari6.jpg" class="d-block w-100" alt="Ferrari Portofino">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./images/ferrari7.jpg" class="d-block w-100" alt="Ferrari Portofino">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./images/ferrari8.jpg" class="d-block w-100" alt="Ferrari Portofino">
+                        </div>
                       </div>
-                      <div class="carousel-item">
-                        <img src="./images/ferrari3.jpg" class="d-block w-100" alt="Ferrari Portofino">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./images/ferrari4.jpg" class="d-block w-100" alt="Ferrari Portofino">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./images/ferrari5.jpg" class="d-block w-100" alt="Ferrari Portofino">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./images/ferrari6.jpg" class="d-block w-100" alt="Ferrari Portofino">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./images/ferrari7.jpg" class="d-block w-100" alt="Ferrari Portofino">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./images/ferrari8.jpg" class="d-block w-100" alt="Ferrari Portofino">
-                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
                   </div>
             </section>
-        </main>
-    </div>
+          </main>
+      </div>
 
-    <!-- Scroll reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="script.js"></script>
-    <!-- bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+      <!-- Scroll reveal -->
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <script src="script.js"></script>
+      <!-- bootstrap -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
 </html>
