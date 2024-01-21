@@ -924,6 +924,14 @@ footer .copyright-notice {
         width: 100%;
     }
 
+    #contact .contact-content .my-contact-info p {
+        transition: all 0.35s linear;
+    }
+
+    #contact .contact-content .my-contact-info p:hover {
+        color: var(--yellow);
+    }
+
     #contact .contact-content .my-contact-info svg {
         height: 50px;
     }
@@ -941,8 +949,12 @@ footer .copyright-notice {
         margin-bottom: 1rem;
     }
 
-    .footer-nav ul {
-        gap: .4rem;
+    .footer-nav ul li:last-child a {
+        padding: .5rem 1rem;
+    }
+
+    .footer-nav ul li:last-child a:hover {
+        color: rgb(102, 99, 99);
     }
 
     footer .sledujte-nas h5 {
@@ -958,7 +970,6 @@ footer .copyright-notice {
         font-size: .7rem;
         text-align: left;
     }
-
 }
 
 /* Dárkový poukaz */

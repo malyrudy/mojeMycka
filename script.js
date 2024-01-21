@@ -38,6 +38,11 @@ ScrollReveal().reveal('.gallery-description-header', { origin: "top" });
 ScrollReveal().reveal('.done-services', { origin: "left" });
 ScrollReveal().reveal('.carousel', { origin: "bottom" });
 
+// Dárkový poukaz Scroll reveal 
+ScrollReveal().reveal('#darkovy_poukaz .information', { origin: "left" });
+ScrollReveal().reveal('.darkovy-poukaz-item h3', { origin: "bottom" });
+ScrollReveal().reveal('.darkovy-poukaz-item img', { origin: "right" });
+
 // Stažení dárkového poukazu 
 var imagePaths = ['./images/dárkový_poukaz1.jpg', './images/dárkový_poukaz2.jpg', './images/dárkový_poukaz3.jpg', './images/dárkový_poukaz4.jpg'];
 
