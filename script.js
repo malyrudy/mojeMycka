@@ -1,4 +1,23 @@
-const hamburgerIcon = document.querySelector(".hamburger-menu-icon");
+// Scroll Sections active link
+let sections = document.querySelectorAll("section");
+let navLinks = document.querySelectorAll("header nav a");
+
+window.onscroll = function() {
+    sections.forEach(function(sec) {
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 100;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute("id");
+
+        if(top >= offset && top < offset + height) {
+            navLinks.forEach(function(links) {
+                links.classList.remove("active");
+                document.querySelector("header nav a[href*=" + id + "]").classList.add("active");
+            })
+        };
+    })};
+
+const hamburgerIcon = document.querySelector("#menu-icon");
 const navbarMenu = document.querySelector(".navbar-ul");
 const navbarMenuItems = document.querySelectorAll(".navbar-ul li");
 
@@ -7,16 +26,14 @@ function activeMenu() {
 }
 
 hamburgerIcon.addEventListener("click", () => {
-    document.querySelector('.line1').classList.toggle('active');
-    document.querySelector('.line2').classList.toggle('active');
+    hamburgerIcon.classList.toggle("bx-x");
     activeMenu();
 })
 
 navbarMenuItems.forEach(item => {
     item.addEventListener("click", function(){
         activeMenu();
-        document.querySelector('.line1').classList.toggle('active');
-        document.querySelector('.line2').classList.toggle('active');
+        hamburgerIcon.classList.toggle("bx-x");
     })
 });
 
@@ -37,11 +54,6 @@ ScrollReveal().reveal('.image-content, .services-item, form', { origin: "right" 
 ScrollReveal().reveal('.gallery-description-header', { origin: "top" });
 ScrollReveal().reveal('.done-services', { origin: "left" });
 ScrollReveal().reveal('.carousel', { origin: "bottom" });
-
-// Dárkový poukaz Scroll reveal 
-ScrollReveal().reveal('#darkovy_poukaz .information', { origin: "left" });
-ScrollReveal().reveal('.darkovy-poukaz-item h3', { origin: "bottom" });
-ScrollReveal().reveal('.darkovy-poukaz-item img', { origin: "right" });
 
 // Stažení dárkového poukazu 
 var imagePaths = ['./images/dárkový_poukaz1.jpg', './images/dárkový_poukaz2.jpg', './images/dárkový_poukaz3.jpg', './images/dárkový_poukaz4.jpg'];
