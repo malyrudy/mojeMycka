@@ -484,7 +484,6 @@ footer .copyright-notice {
     .navbar ul {
         display: none;
         gap: 0;
-        /* visibility: hidden; */
         padding-bottom: 2rem;
         height: fit-content;
         width: 100%;
