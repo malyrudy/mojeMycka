@@ -57,6 +57,10 @@ body {
     margin: 30px auto;
 }
 
+.container-bez-marginu {
+    margin: 0 auto !important;
+}
+
 .btn {
     padding: 1rem 2.5rem;
     border-radius: 50px;
